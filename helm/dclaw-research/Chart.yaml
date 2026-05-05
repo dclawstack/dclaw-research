@@ -1,0 +1,6 @@
+apiVersion: v2
+name: dclaw-research
+description: Helm chart for DClaw Research
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
