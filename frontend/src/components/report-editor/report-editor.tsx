@@ -80,7 +80,7 @@ function htmlToMarkdown(html: string): string {
     .replace(/<strong>(.*?)<\/strong>/gi, "**$1**")
     .replace(/<em>(.*?)<\/em>/gi, "*$1*")
     .replace(/<li>(.*?)<\/li>/gi, "- $1\n")
-    .replace(/<ul>(.*?)<\/ul>/gis, "$1")
+    .replace(/<ul>(.*?)<\/ul>/gi, "$1")
     .replace(/<br\s*\/?>/gi, "\n")
     .replace(/<[^>]+>/g, "")
     .trim();
