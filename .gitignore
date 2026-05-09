@@ -1,27 +1,10 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.venv/
-venv/
-.env
-
-# Node
-node_modules/
-.next/
-out/
-dist/
-*.log
-
-# Rust
-src-tauri/target/
-
-# IDE
-.idea/
-.vscode/
-*.swp
-
 # OS
 .DS_Store
-Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
