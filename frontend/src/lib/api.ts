@@ -48,7 +48,7 @@ export type GraphNode = {
   id: string;
   label: string;
   node_type: string;
-  meta: Record<string, unknown>;
+  meta: any;
   x: number | null;
   y: number | null;
 };
@@ -74,11 +74,11 @@ export type ReportSection = {
 export const api = fetchJson;
 
 // ── Type stubs ──
-// Permissive Record stubs until each domain shape is locked in.
+// Permissive `any` stubs until each domain shape is locked in.
 // Tighten these to real interfaces as the app stabilizes.
-export type GraphEdge = Record<string, unknown>;
-export type GraphNode = Record<string, unknown>;
-export type Project = Record<string, unknown>;
-export type ReportSection = Record<string, unknown>;
-export type SearchQuery = Record<string, unknown>;
-export type Source = Record<string, unknown>;
+export type GraphEdge = any;
+export type GraphNode = any;
+export type Project = any;
+export type ReportSection = any;
+export type SearchQuery = any;
+export type Source = any;
