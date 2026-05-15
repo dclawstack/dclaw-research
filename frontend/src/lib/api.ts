@@ -68,3 +68,17 @@ export type ReportSection = {
   citations: string[];
   sort_order: number;
 };
+
+// ── Generic typed fetch ──
+// Pages reference `api<T>(path, opts)` directly. Alias of fetchJson.
+export const api = fetchJson;
+
+// ── Type stubs ──
+// Permissive Record stubs until each domain shape is locked in.
+// Tighten these to real interfaces as the app stabilizes.
+export type GraphEdge = Record<string, unknown>;
+export type GraphNode = Record<string, unknown>;
+export type Project = Record<string, unknown>;
+export type ReportSection = Record<string, unknown>;
+export type SearchQuery = Record<string, unknown>;
+export type Source = Record<string, unknown>;
